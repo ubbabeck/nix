@@ -119,7 +119,7 @@ struct NixRepl
                               unsigned int maxDepth = std::numeric_limits<unsigned int>::max())
     {
         ::nix::printValue(*state, str, v, PrintOptions {
-            .ansiColors = true,
+            .ansiColors = false,
             .force = true,
             .derivationPaths = true,
             .maxDepth = maxDepth,
